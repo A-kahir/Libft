@@ -132,5 +132,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you have any questions or suggestions regarding the project, feel free to contact me at:
 
 - **Email**: aymanekahir036@gmail.com
-- **GitHub**: [@A-kahir]([https://github.com/yourusername](https://github.com/A-kahir))
+- **GitHub**: [@A-kahir] (https://github.com/A-kahir)
 
