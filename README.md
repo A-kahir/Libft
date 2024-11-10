@@ -80,5 +80,57 @@ Here are some of the key functions I implemented as part of this project:
 
 1. Clone this repository:
 
+    ```bash
+   git clone https://github.com/akahir/libft.git
+
+2. Navigate into the project directory:
+
    ```bash
-   git clone https://github.com/yourusername/libft.git
+   cd libft
+3. Compile the project:
+
+    ```bash
+    make
+4. The library will be created as libft.a. You can link it to other C programs using:
+
+   ```bash
+   gcc -o my_program my_program.c -L. -lft
+5. To remove object files and the library, run:
+
+   ```bash
+   make clean
+6. To remove all generated files, including the libft.a library:
+
+    ```bash
+    make fclean
+7. To recompile the project:
+
+   ```bash
+   make re
+
+---
+
+## 🧪 Testing
+
+### Unit Tests
+To ensure all functions work correctly, I wrote unit tests for each implemented function. The tests are located in the `tests` folder and can be run with `gcc`:
+
+  ```bash
+  gcc -o tests/test_program tests/*.c -L. -lft
+  ./test_program
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📫 Contact
+
+If you have any questions or suggestions regarding the project, feel free to contact me at:
+
+- **Email**: aymanekahir036@gmail.com
+- **GitHub**: [@A-kahir]([https://github.com/yourusername](https://github.com/A-kahir))
+
