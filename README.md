@@ -115,9 +115,9 @@ Here are some of the key functions I implemented as part of this project:
 ### Unit Tests
 To ensure all functions work correctly, I wrote unit tests for each implemented function. The tests are located in the `tests` folder and can be run with `gcc`:
 
-  ```bash
-  gcc -o tests/test_program tests/*.c -L. -lft
-  ./test_program
+     ```bash
+     gcc -o tests/test_program tests/*.c -L. -lft
+     ./test_program
 
 ---
 
