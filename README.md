@@ -76,7 +76,7 @@ Here are some of the key functions I implemented as part of this project:
 
 ---
 
-## 🚀 Usage
+## 🚀 #Usage
 
 1. Clone this repository:
 
@@ -110,7 +110,7 @@ Here are some of the key functions I implemented as part of this project:
 
 ---
 
-## 🧪 Testing
+## 🧪 #Testing
 
 ### Unit Tests
 To ensure all functions work correctly, I wrote unit tests for each implemented function. The tests are located in the `tests` folder and can be run with `gcc`:
@@ -121,13 +121,13 @@ To ensure all functions work correctly, I wrote unit tests for each implemented 
 
 ---
 
-## 📜 License
+## 📜 #License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 📫 Contact
+## 📫 #Contact
 
 If you have any questions or suggestions regarding the project, feel free to contact me at:
 
