@@ -6,13 +6,13 @@
 /*   By: akahir <aymanekahir036@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 19:20:13 by akahir            #+#    #+#             */
-/*   Updated: 2024/11/15 16:27:55 by akahir           ###   ########.fr       */
+/*   Updated: 2024/11/15 18:25:28 by akahir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char *check_strings(char const *s1, char const *s2)
+static	char	*check_strings(char const *s1, char const *s2)
 {
 	if (s1 == NULL && s2 == NULL)
 	{
@@ -28,6 +28,7 @@ static char *check_strings(char const *s1, char const *s2)
 	}
 	return (0);
 }
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*ptr;
