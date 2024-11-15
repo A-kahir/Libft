@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akahir <akahir@student.1337.ma>            +#+  +:+       +#+        */
+/*   By: akahir <aymanekahir036@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:30:22 by akahir            #+#    #+#             */
-/*   Updated: 2024/11/05 17:30:14 by akahir           ###   ########.fr       */
+/*   Updated: 2024/11/15 17:29:39 by akahir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,11 @@
 
 size_t	ft_strlen(const char *s)
 {
-	int	i;
 	int	count;
 
-	i = 0;
 	count = 0;
-	while (s[i] != '\0')
+	while (s[count] != '\0')
 	{
-		i++;
 		count++;
 	}
 	return (count);

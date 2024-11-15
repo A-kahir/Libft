@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akahir <akahir@student.1337.ma>            +#+  +:+       +#+        */
+/*   By: akahir <aymanekahir036@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 14:48:22 by akahir            #+#    #+#             */
-/*   Updated: 2024/10/27 15:33:24 by akahir           ###   ########.fr       */
+/*   Updated: 2024/11/15 16:38:18 by akahir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,10 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
 
+	if (n == 0)
+	{
+		return (0);
+	}
 	i = 0;
 	while (i < n)
 	{

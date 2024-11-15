@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akahir <akahir@student.1337.ma>            +#+  +:+       +#+        */
+/*   By: akahir <aymanekahir036@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 19:39:10 by akahir            #+#    #+#             */
-/*   Updated: 2024/11/08 11:27:31 by akahir           ###   ########.fr       */
+/*   Updated: 2024/11/15 12:59:41 by akahir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
@@ -23,7 +22,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	{
 		return (NULL);
 	}
-	if (n == 0 || dst == src)
+	if (dst == src)
 	{
 		return (dst);
 	}

@@ -3,48 +3,51 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akahir <akahir@student.1337.ma>            +#+  +:+       +#+        */
+/*   By: akahir <aymanekahir036@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 10:00:07 by akahir            #+#    #+#             */
-/*   Updated: 2024/11/05 12:20:11 by akahir           ###   ########.fr       */
+/*   Updated: 2024/11/15 17:09:04 by akahir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	over_flow(unsigned long result, int signe)
+static	int	over_flow(int signe)
 {
-	if (result >= 9223372036854775807 && signe == 1)
+	if (signe == 1)
+	{
 		return (-1);
-	if ((result > 9223372036854775807) && (signe == -1))
+	}
+	else
+	{
 		return (0);
-	return (3);
+	}
 }
 
 int	ft_atoi(const char *str)
 {
 	int					i;
 	int					signe;
-	unsigned long		result;
+	unsigned long long	result;
+	unsigned long long	max;
 
 	signe = 1;
 	i = 0;
 	result = 0;
+	max = 9223372036854775807;
 	while (((str[i] >= 9 && str[i] <= 13) || str[i] == 32))
 		i++;
 	if ((str[i] == '-') || (str[i] == '+'))
 	{
 		if (str[i] == '-')
-		{
 			signe = -1;
-		}
 		i++;
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		result = ((result * 10) + (str[i] - '0'));
-		if (over_flow(result, signe) != 3)
-			return (over_flow(result, signe));
+		if ((result > max / 10) || (result == max / 10) && (str[i] - '0') > 7)
+			return (over_flow(signe));
 		i++;
 	}
 	return (result * signe);

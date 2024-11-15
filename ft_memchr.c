@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akahir <akahir@student.1337.ma>            +#+  +:+       +#+        */
+/*   By: akahir <aymanekahir036@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 15:02:49 by akahir            #+#    #+#             */
-/*   Updated: 2024/11/05 16:04:05 by akahir           ###   ########.fr       */
+/*   Updated: 2024/11/15 13:20:47 by akahir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	{
 		if (str[i] == (char)c)
 		{
-			return ((char *)(&s[i]));
+			return ((char *)(&str[i]));
 		}
 		i++;
 	}

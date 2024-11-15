@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akahir <akahir@student.1337.ma>            +#+  +:+       +#+        */
+/*   By: akahir <aymanekahir036@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 09:56:19 by akahir            #+#    #+#             */
-/*   Updated: 2024/11/05 17:30:01 by akahir           ###   ########.fr       */
+/*   Updated: 2024/11/15 16:28:56 by akahir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	start_str(char const *s1, char const *set)
+static	int	start_str(char const *s1, char const *set)
 {
 	size_t	i;
 	size_t	k;
@@ -32,7 +32,7 @@ int	start_str(char const *s1, char const *set)
 	return (i);
 }
 
-int	end_str(char const *s1, char const *set)
+static	int	end_str(char const *s1, char const *set)
 {
 	size_t	i;
 	size_t	k;
