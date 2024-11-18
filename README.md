@@ -4,16 +4,6 @@ Welcome to my **Libft** project! This repository contains a collection of essent
 
 ---
 
-## 📝 Table of Contents
-- [Project Overview](#project Overview)
-- [Functions Implemented](#functions-implemented)
-- [Usage](#usage)
-- [Testing](#testing)
-- [License](#license)
-- [Contact](#contact)
-
----
-
 ## 📌 Project Overview
 
 The **Libft** project at 42 involves creating your own C library with standard functions that simulate those found in the C standard library (`libc`). The goal is to better understand memory management and improve your coding skills in C by recreating common utility functions. These functions handle various tasks like string manipulation, memory handling, and more.
