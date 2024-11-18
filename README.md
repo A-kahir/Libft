@@ -5,7 +5,7 @@ Welcome to my **Libft** project! This repository contains a collection of essent
 ---
 
 ## 📝 Table of Contents
-- [Project Overview](#project-overview)
+- [Project Overview](#project Overview)
 - [Functions Implemented](#functions-implemented)
 - [Usage](#usage)
 - [Testing](#testing)
