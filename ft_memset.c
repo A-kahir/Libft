@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akahir <aymanekahir036@gmail.com>          +#+  +:+       +#+        */
+/*   By: akahir <akahir@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:40:36 by akahir            #+#    #+#             */
-/*   Updated: 2024/11/15 12:58:41 by akahir           ###   ########.fr       */
+/*   Updated: 2024/11/20 11:47:10 by akahir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ void	*ft_memset(void *b, int c, size_t len)
 		str[i] = ch;
 		i++;
 	}
-	return (str);
+	return ((void *)str);
 }

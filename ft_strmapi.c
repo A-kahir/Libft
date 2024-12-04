@@ -6,7 +6,7 @@
 /*   By: akahir <akahir@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 18:43:42 by akahir            #+#    #+#             */
-/*   Updated: 2024/11/05 17:30:11 by akahir           ###   ########.fr       */
+/*   Updated: 2024/11/20 11:45:02 by akahir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*result;
 
 	len_s = 0;
-	while (s == NULL || f == NULL)
+	if (s == NULL || f == NULL)
 	{
 		return (NULL);
 	}
@@ -27,7 +27,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	{
 		len_s++;
 	}
-	result = (char *)malloc((len_s + 1) * sizeof(char));
+	result = malloc((len_s + 1) * sizeof(char));
 	if (result == NULL)
 		return (NULL);
 	i = 0;

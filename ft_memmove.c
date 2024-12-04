@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akahir <aymanekahir036@gmail.com>          +#+  +:+       +#+        */
+/*   By: akahir <akahir@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 11:16:17 by akahir            #+#    #+#             */
-/*   Updated: 2024/11/15 12:50:42 by akahir           ###   ########.fr       */
+/*   Updated: 2024/11/17 16:10:22 by akahir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	overlap(char *dest, const char *source, size_t len)
+static	void	overlap(char *dest, const char *source, size_t len)
 {
 	while (len > 0)
 	{
@@ -27,7 +27,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	const char	*source;
 	size_t		i;
 
-	if ((dst == NULL) || (src == NULL))
+	if ((dst == NULL) && (src == NULL))
 		return (NULL);
 	if (src == dst)
 		return (dst);

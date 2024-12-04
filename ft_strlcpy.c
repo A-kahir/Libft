@@ -6,7 +6,7 @@
 /*   By: akahir <akahir@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 10:34:21 by akahir            #+#    #+#             */
-/*   Updated: 2024/10/27 15:23:09 by akahir           ###   ########.fr       */
+/*   Updated: 2024/11/19 11:22:22 by akahir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 
 	i = 0;
 	if (size == 0)
-	{
 		return (ft_strlen(src));
-	}
-	while (src[i] && i < size -1)
+	while (src[i] && i < size - 1)
 	{
 		dst[i] = src[i];
 		i++;

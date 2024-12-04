@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akahir <aymanekahir036@gmail.com>          +#+  +:+       +#+        */
+/*   By: akahir <akahir@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 10:00:07 by akahir            #+#    #+#             */
-/*   Updated: 2024/11/15 17:09:04 by akahir           ###   ########.fr       */
+/*   Updated: 2024/11/16 09:47:41 by akahir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,9 +45,9 @@ int	ft_atoi(const char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		result = ((result * 10) + (str[i] - '0'));
-		if ((result > max / 10) || (result == max / 10) && (str[i] - '0') > 7)
+		if (result > (max - (str[i] - '0')) / 10)
 			return (over_flow(signe));
+		result = ((result * 10) + (str[i] - '0'));
 		i++;
 	}
 	return (result * signe);
